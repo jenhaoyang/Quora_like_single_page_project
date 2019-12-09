@@ -9,3 +9,6 @@ ports:
 tasks:
 - init: echo 'init script' # runs during prebuild
   command: echo 'start script'
+vscode:
+  extensions:
+    - octref.vetur@0.22.6:zBVHW+0GUP5BsEx9IH6f3g==
