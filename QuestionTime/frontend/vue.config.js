@@ -8,13 +8,13 @@
 const BundleTracker = require("webpack-bundle-tracker");
 
 module.exports = {
-    //     This is an optional file but needed when serving Vue 
-    //     behind a proxy, we need to disable host checks.
-    devServer: {
-        disableHostCheck: true
-    },       
+    // //     This is an optional file but needed when serving Vue 
+    // //     behind a proxy, we need to disable host checks.
+    // devServer: {
+    //     disableHostCheck: true
+    // },       
     // on Windows you might want to set publicPath: "http://127.0.0.1:8080/" 
-    publicPath: "https://8080-cfd44999-e568-4d51-9c11-18b06a6fd5c0.ws-ap01.gitpod.io/", 
+    publicPath: "http://0.0.0.0:8080/", 
     outputDir: './dist/',
 
 
@@ -48,12 +48,12 @@ module.exports = {
 
 
     // uncomment before executing 'npm run build' 
-    // css: {
-    //     extract: {
-    //       filename: 'bundle.css',
-    //       chunkFilename: 'bundle.css',
-    //     },
-    // }
+    css: {
+        extract: {
+          filename: 'bundle.css',
+          chunkFilename: 'bundle.css',
+        },
+    }
 
 };
 
