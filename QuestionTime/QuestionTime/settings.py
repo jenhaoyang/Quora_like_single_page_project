@@ -141,12 +141,12 @@ LOGOUT_REDIRECT_URL = "/"
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
-STATIC_ROOT = 'assets'
+STATIC_ROOT = 'static'
 
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "assets"),
+    os.path.join(BASE_DIR, "frontend/src/assets"),
     os.path.join(BASE_DIR, "frontend/dist"),
 ]
 
