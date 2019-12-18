@@ -1,1 +1,1 @@
-web: gunicorn QuestionTime.QuestionTime.wsgi --log-file -
+web: gunicorn QuestionTime.wsgi --log-file -
